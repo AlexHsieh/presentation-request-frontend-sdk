@@ -1,5 +1,5 @@
 {
-  "name": "@iamhuman.link/presentation-request-frontend-sdk",
+  "name": "@iamhuman.link/presentation-exchange-vue",
   "version": "0.1.0",
   "description": "Frontend helpers and Vue QR component for I Am Human presentation requests.",
   "type": "module",
