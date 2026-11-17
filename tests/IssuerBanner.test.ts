@@ -1,7 +1,7 @@
 import { mount } from '@vue/test-utils';
 import { expect, it } from 'vitest';
 import { IssuerBanner } from '../src';
-const issuer = { did:'did:example:issuer', environment:'stage' as const, name:'I Am Human', description:'<script>bad()</script>', iconUrl:'https://example.com/icon.png?token=public', websiteUrl:'https://iamhuman.link', defaultLocale:'en' as const, localizations:{'zh-Hant':{name:'I Am Human', description:'中文說明'}} };
+const issuer = { did:'did:example:issuer', name:'I Am Human', description:'<script>bad()</script>', iconUrl:'https://example.com/icon.png?token=public', websiteUrl:'https://iamhuman.link', defaultLocale:'en' as const, localizations:{'zh-Hant':{name:'I Am Human', description:'中文說明'}} };
 it('renders safe localized content, links and failed-image fallback', async () => {
  const wrapper=mount(IssuerBanner,{props:{issuer,locale:'zh-Hant'}});
  expect(wrapper.text()).toContain('中文說明');
