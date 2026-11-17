@@ -1,6 +1,6 @@
 {
   "name": "@iamhuman.link/presentation-exchange-vue",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Frontend helpers and Vue QR component for I Am Human presentation requests.",
   "type": "module",
   "main": "dist/index.umd.cjs",
@@ -11,7 +11,8 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "require": "./dist/index.umd.cjs"
-    }
+    },
+    "./style.css": "./dist/style.css"
   },
   "files": [
     "dist"

@@ -11,3 +11,7 @@ export type {
   OpenPresentationRequestInput,
   PresentationRequestQrLabels,
 } from './types';
+
+export { fetchIssuerMetadata, IssuerMetadataError } from './issuer-metadata.js';
+export type { IssuerMetadata, FetchIssuerMetadataInput } from './issuer-metadata.js';
+export { default as IssuerBanner } from './IssuerBanner.vue';

@@ -8,6 +8,7 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
       name: 'PresentationExchangeVue',
+      cssFileName: 'style',
       formats: ['es', 'umd'],
       fileName: (format) => (format === 'es' ? 'index.js' : 'index.umd.cjs'),
     },
